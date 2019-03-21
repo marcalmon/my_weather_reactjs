@@ -7,14 +7,19 @@
   margin: 1em;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
+.current-city {
+  margin-top: 5em;
+}
 .current-city-date {
   display: flex;
   justify-content: center;
+  margin: 1em;
 }
 
-.current-cities-date p {
+.current-city-date p {
   padding: 15px;
 }
 

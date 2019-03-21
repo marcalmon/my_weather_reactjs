@@ -2,19 +2,29 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Components
-import Cities from './components/Cities';
+import Button from './components/Button/Button';
 import CurrentCity from './components/CurrentCity'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      weather: []
+    }
+  }
+
+  componentDidMount() {
+  }
+
   render() {
     return (
       <div className="App">
         <div className="header-cities">
-        <Cities />
-        <Cities />
-        <Cities />
-        <Cities />
-        <Cities />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+          <Button />
         </div>
         <CurrentCity />
       </div>
